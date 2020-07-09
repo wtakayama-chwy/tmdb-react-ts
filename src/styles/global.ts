@@ -5,9 +5,11 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        border: none;
     }
 
     body {
+        list-style: none;
         background: ${props => props.theme.colors.background};
         font-size: 14px;
         color: ${props => props.theme.colors.text};

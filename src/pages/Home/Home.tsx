@@ -1,9 +1,15 @@
-import React from 'react';
-// import { Container } from './styles';
+import React from 'react'
+
+import MoviesNowPlaying from '../../components/Movie/MoviesNowPlaying/MoviesNowPlaying'
+import SearchBox from '../../components/SearchBox/SearchBox'
 
 const Home: React.FC = () => {
+
   return (
-    <h1>Hello World</h1>
+    <>
+      <SearchBox />
+      <MoviesNowPlaying />
+    </>
   );
 }
 

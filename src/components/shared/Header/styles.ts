@@ -8,4 +8,9 @@ export const Container = styled.div`
     align-items: center;
     padding: 0 1em;
     justify-content: space-between;
+
+    .main-logo {
+        width: 100px;
+        max-height: 1em;
+    }
 `

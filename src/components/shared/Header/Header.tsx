@@ -1,11 +1,14 @@
-import React, { useContext } from 'react';
-import { Container } from './styles';
-import Switch from 'react-switch';
-import { ThemeContext } from 'styled-components';
-import { shade } from 'polished';
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import Switch from 'react-switch'
+import { shade } from 'polished'
+import { ThemeContext } from 'styled-components'
+
+import { Container } from './styles'
+import logo from '../../../assets/logo-tmdb-main.svg'
 
 interface Props {
-    toggleTheme(): void;
+    toggleTheme(): void
 }
 
 const Header: React.FC<Props> = ({ toggleTheme }) => {
@@ -14,7 +17,9 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 
     return (
         <Container>
-            Hello World
+            <Link to="">
+                <img className="main-logo" src={logo} alt="logo-tmdb" />
+            </Link>
             <Switch
                 onChange={toggleTheme}
                 checked={title === 'dark'}
@@ -27,7 +32,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
                 onColor={shade(0.55, colors.primary)}
             />
         </Container>
-    );
+    )
 }
 
-export default Header;
+export default Header

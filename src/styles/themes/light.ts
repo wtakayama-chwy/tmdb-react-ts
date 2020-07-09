@@ -9,8 +9,9 @@ export default {
         tertitary: '#F1E9DB',
         forth: '#A39B8B',
         fifth: '#716A5C',
+        gray: dColors.darkGray,
 
         background: dColors.white,
-        text: dColors.white
+        text: dColors.darkGray
     }
 }
